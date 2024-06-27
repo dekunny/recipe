@@ -1,0 +1,409 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(122, 191, 191, 0.5); /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height */
+}
+
+.content-wrapper {
+    background-color: #F2F2F2; /* Light background for the content */
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+p, dd, dt, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+nav a, nav span, .menu li, #social li, footer {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background: #FFFFFF; /* White color for header */
+    color: #EB5428; /* Orange text color */
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 8px 8px 0 0;
+    justify-content: space-between; /* Ensures space between logo and nav */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+header .logo {
+    background: #EB5428; /* Orange background for logo */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header nav ul li a {
+    color: #EB5428; /* Orange text color */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul li img {
+    height: 40px; /* Adjust icon size */
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+header .sign-in {
+    margin-right: 20px;
+}
+
+header .sign-in button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: #EB5428; /* Orange text color */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-intro {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.recipe-image {
+    width: 50%;
+}
+
+.recipe-text {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.actions button {
+    padding: 10px;
+    border: none;
+    background: #0D0D0D; /* Dark button background */
+    color: #F2F2F2; /* Light button text */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.actions button:hover {
+    background: #EB5428; /* Orange on hover */
+}
+
+.details {
+    background-color: #0D0D0D; /* Black background */
+    color: #7ABFBF; /* Teal text color */
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.details-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-info p {
+    margin: 10px;
+}
+
+.ingredients-directions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.ingredients, .directions {
+    width: 48%; /* Adjust width to ensure proper spacing */
+}
+
+.side-dishes {
+    width: 100%;
+    text-align: center;
+    background-color: #7ABFBF; /* Teal background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.dishes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.side-dish {
+    flex: 1 1 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #F2F2F2; /* Light background for side dishes */
+}
+
+.side-dish img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.rating .stars {
+    display: inline-flex;
+    gap: 2px;
+}
+
+.rating .stars svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background: #FFFFFF; /* White footer background */
+    color: #EB5428; /* Orange footer text */
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+footer .copyright {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .copyright img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer .social-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-icons ul li a {
+    color: #EB5428; /* Orange color for links */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Responsive Styles */
+
+/* Large Screens */
+@media (min-width: 1024px) {
+    header nav ul li {
+        margin: 0 20px;
+    }
+    .actions {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
+    .recipe-intro {
+        flex-direction: row;
+    }
+    .recipe-image, .recipe-text {
+        width: 50%;
+    }
+    .recipe-text {
+        padding-left: 20px;
+    }
+    section {
+        width: 80%;
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header nav ul li {
+        margin: 0 15px;
+    }
+    .actions {
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+    }
+    .recipe-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipe-image, .recipe-text {
+        width: 100%;
+    }
+    .recipe-text {
+        padding-left: 0;
+        text-align: center;
+    }
+    section {
+        width: 90%;
+    }
+    .ingredients-directions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ingredients, .directions {
+        width: 100%;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 767px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
+    .actions {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .recipe-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipe-image, .recipe-text {
+        width: 100%;
+    }
+    .recipe-text {
+        padding-left: 0;
+        text-align: center;
+    }
+    section {
+        width: 100%;
+        padding: 10px;
+    }
+    .ingredients-directions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ingredients, .directions {
+        width: 100%;
+    }
+    .side-dishes {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
