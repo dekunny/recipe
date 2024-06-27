@@ -300,6 +300,50 @@ footer .social-icons ul li a {
     gap: 5px;
 }
 
+/* Print Styles */
+@media print {
+    body {
+        margin: 0.5in;
+        font-family: serif;
+    }
+
+    header, nav, .actions, footer {
+        display: none;
+    }
+
+    img {
+        display: none; /* Or use filter: grayscale(100%); if you want grayscale */
+    }
+
+    a::after {
+        content: " (" attr(href) ")";
+        color: #000000; /* Make URLs visible in black */
+    }
+
+    .content-wrapper {
+        box-shadow: none;
+        background-color: #FFFFFF; /* White background for printing */
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    main, .details, .ingredients-directions, .side-dishes {
+        page-break-inside: avoid;
+    }
+
+    @page {
+        size: A4; /* Adjust as necessary for your paper size */
+        margin: 0;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact; /* Ensures background colors are printed */
+        color-adjust: exact;
+    }
+}
+
 /* Responsive Styles */
 
 /* Large Screens */
